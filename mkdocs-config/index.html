@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Kleiner Blindtext - Anleitung</title>
+  <title>mkDocs-Konfiguration - Anleitung</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Kleiner Blindtext";
-    var mkdocs_page_input_path = "blindtext.md";
+    var mkdocs_page_name = "mkDocs-Konfiguration";
+    var mkdocs_page_input_path = "mkdocs-config.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -54,15 +54,9 @@
     <a class="" href="..">Willkommen zu mkDocs</a>
 	    </li>
           
-            <li class="toctree-l1 current">
+            <li class="toctree-l1">
 		
-    <a class="current" href="./">Kleiner Blindtext</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#kleiner-blindtext">Kleiner Blindtext</a></li>
-    
-
-    </ul>
+    <a class="" href="../blindtext/">Kleiner Blindtext</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -75,9 +69,15 @@
     <a class="" href="../mkdocs-befehle/">mkDocs-Befehle</a>
 	    </li>
           
-            <li class="toctree-l1">
+            <li class="toctree-l1 current">
 		
-    <a class="" href="../mkdocs-config/">mkDocs-Konfiguration</a>
+    <a class="current" href="./">mkDocs-Konfiguration</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#mkdocs-konfiguration">mkDocs-Konfiguration</a></li>
+    
+
+    </ul>
 	    </li>
           
             <li class="toctree-l1">
@@ -107,7 +107,7 @@
     
       
     
-    <li>Kleiner Blindtext</li>
+    <li>mkDocs-Konfiguration</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -117,8 +117,24 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="kleiner-blindtext">Kleiner Blindtext</h1>
-<p>Hallo. Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und rumgedreht – und oftmals gar nicht erst gelesen. Aber bin ich allein deshalb ein schlechterer Text als andere? Na gut, ich werde nie in den Bestsellerlisten stehen. Aber andere Texte schaffen das auch nicht. Und darum stört es mich nicht besonders blind zu sein. Und sollten Sie diese Zeilen noch immer lesen, so habe ich als kleiner Blindtext etwas geschafft, wovon all die richtigen und wichtigen Texte meist nur träumen.</p>
+                <h1 id="mkdocs-konfiguration">mkDocs-Konfiguration</h1>
+<pre><code class="yml">site_name: Anleitung
+nav:
+  - Home: index.md
+   - Kleiner Blindtext: blindtext.md
+  - Wortberge: wortberge.md
+theme:
+  name: readthedocs
+  custom_dir: 'theme/'
+extra_css:
+  - extra.css
+use_directory_urls: true
+plugins:
+  - search:
+      lang: de
+dev_addr: '0.0.0.0:8080'
+
+</code></pre>
               
             </div>
           </div>
@@ -126,10 +142,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../markdown/" class="btn btn-neutral float-right" title="Styling mit Markdown-Syntax">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../wortberge/" class="btn btn-neutral float-right" title="Hinter den Wortbergen">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href=".." class="btn btn-neutral" title="Willkommen zu mkDocs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../mkdocs-befehle/" class="btn btn-neutral" title="mkDocs-Befehle"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -155,10 +171,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../mkdocs-befehle/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../markdown/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../wortberge/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
