@@ -7,14 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
+  
   <link rel="shortcut icon" href="../img/favicon.ico">
   <title>Styling mit Markdown-Syntax - Anleitung</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  <link href="../extra.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../extra.css" rel="stylesheet" />
   
   <script>
     // Current page data
@@ -25,7 +26,7 @@
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
   <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
@@ -36,6 +37,7 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
         <a href=".." class="icon icon-home"> Anleitung</a>
         <div role="search">
@@ -46,68 +48,62 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="..">Willkommen zu mkDocs</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../blindtext/">Kleiner Blindtext</a>
-	    </li>
-          
-            <li class="toctree-l1 current">
-		
-    <a class="current" href="./">Styling mit Markdown-Syntax</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#styling-mit-markdown-syntax">Styling mit Markdown-Syntax</a></li>
-    
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Willkommen zu mkDocs</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../blindtext/">Kleiner Blindtext.</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Styling mit Markdown-Syntax</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#links">Links</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#html">HTML</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bilder">Bilder</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#uberschriften">Überschriften</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#h2">H2</a>
         <ul>
-        
-            <li><a class="toctree-l3" href="#links">Links</a></li>
-        
-            <li><a class="toctree-l3" href="#html">HTML</a></li>
-        
-            <li><a class="toctree-l3" href="#bilder">Bilder</a></li>
-        
-            <li><a class="toctree-l3" href="#uberschriften">Überschriften</a></li>
-        
-            <li><a class="toctree-l3" href="#h2">H2</a></li>
-        
-            <li><a class="toctree-l3" href="#listen">Listen</a></li>
-        
-            <li><a class="toctree-l3" href="#tabellen">Tabellen</a></li>
-        
-            <li><a class="toctree-l3" href="#code">Code</a></li>
-        
+    <li class="toctree-l3"><a class="reference internal" href="#h3">H3</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#h4">H4</a>
+    </li>
         </ul>
-    
-
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#listen">Listen</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#neue-liste">Neue Liste</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tabellen">Tabellen</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#code">Code</a>
+    </li>
     </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../mkdocs-befehle/">mkDocs-Befehle</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../mkdocs-config/">mkDocs-Konfiguration</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../wortberge/">Hinter den Wortbergen.</a>
-	    </li>
-          
-        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../mkdocs-befehle/">mkDocs-Befehle</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../mkdocs-config/">mkDocs-Konfiguration</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../wortberge/">Hinter den Wortbergen über den Wolken</a>
+                    </li>
+                </ul>
       </div>
-      &nbsp;
+    </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -132,6 +128,7 @@
       
     </li>
   </ul>
+  
   <hr/>
 </div>
           <div role="main">
@@ -205,7 +202,7 @@
         <a href="../mkdocs-befehle/" class="btn btn-neutral float-right" title="mkDocs-Befehle">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../blindtext/" class="btn btn-neutral" title="Kleiner Blindtext"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../blindtext/" class="btn btn-neutral" title="Kleiner Blindtext."><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -217,7 +214,7 @@
     
   </div>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
         </div>
@@ -227,7 +224,7 @@
 
   </div>
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
@@ -241,6 +238,11 @@
     <script>var base_url = '..';</script>
     <script src="../js/theme.js" defer></script>
       <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
 
 </body>
 </html>
